@@ -1,0 +1,73 @@
+.header {
+  position: relative;
+  background-image: url("/dot.svg");
+  
+  width: 100%;
+  height: 100vh;
+
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  position: fixed;
+  top: 0;
+  left: 1rem;
+
+  width: 15rem;
+
+  background-color: rgba(255, 255, 255, 0.5);
+
+  & img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.title {
+  font-size: 500%;
+  font-family: "Rubik", sans-serif;
+
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  justify-content: center;
+  line-height: 1;
+
+  & .MA {
+    font-size: 120%;
+    font-family: "Moirai One", system-ui;
+    color: #ff00e6;
+  }
+}
+
+.link {
+  padding: 1rem 2rem;
+
+  font-size: 140%;
+
+  cursor: pointer;
+
+  background-color: #ff00e6;
+  color: white;
+
+  border-radius: 1rem;
+
+  transition: transform 500ms ease;
+
+  margin-top: 1rem;
+}
+
+.link:hover {
+  transform: scale(1.1);
+}
+
+#host {
+  background-color: black;
+  font-size: 85%;
+}
